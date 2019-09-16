@@ -10,6 +10,14 @@
       min-height: 573px;
       background-image: url("/assets/img/img_hero_m.jpg");
     }
+    @media screen and (max-width: 576px) {
+      padding: 0;
+      min-height: 0;
+      background-image: none;
+      .xs-hero-background {
+        background-image: url("/assets/img/img_hero_m.jpg");
+      }
+    }
     .card {
       border: none;
       border-radius: 0;
@@ -34,21 +42,18 @@
           border: none;
           border-radius: 0;
           appearance: none;
-          -webkit-appearance: none;
           text-align-last: center;
-          padding-right: 0;
         }
         .select-wrapper {
           position: relative;
         }
-        .select-wrapper:after {
+        .select-wrapper i {
           position: absolute;
-          top: 34px;
-          right: 25px;
-          font-family: FontAwesome;
-          content: '\f107';
+          top: 10px;
+          right: 10px;
           font-size: 28px;
           color: #434B67;
+          cursor: pointer;
           pointer-events: none;
         }
         .btn-next {
@@ -61,7 +66,7 @@
           text-align: center;
           border-radius: 0;
           &:hover {
-            background: #a9aaab;
+            background: #333;
           }
         }
       }
@@ -84,6 +89,32 @@
           display: block;
         }
       }
+    }
+  }
+}
+
+.hero-text {
+  color: $secondary-text;
+  text-align: right;
+  @media screen and (max-width: 992px) {
+    text-align: center;
+  }
+  .headline.small {
+    font-size: .585em;
+    @media screen and (max-width: 992px) {
+      display: block;
+    }
+  }
+  .headline.bold {
+    display: block;
+    font-size: 1.35em;
+    font-weight: 700;
+    @media screen and (max-width: 992px) {
+      display: inline;
+    }
+    @media screen and (max-width: 400px) {
+      font-size: 1em;
+      display: block;
     }
   }
 }

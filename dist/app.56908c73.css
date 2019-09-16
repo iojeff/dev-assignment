@@ -14467,6 +14467,13 @@ section.faq {
     .hero .jumbotron {
       min-height: 573px;
       background-image: url("/img_hero_m.16198533.jpg"); } }
+  @media screen and (max-width: 576px) {
+    .hero .jumbotron {
+      padding: 0;
+      min-height: 0;
+      background-image: none; }
+      .hero .jumbotron .xs-hero-background {
+        background-image: url("/img_hero_m.16198533.jpg"); } }
   .hero .jumbotron .card {
     border: none;
     border-radius: 0; }
@@ -14489,22 +14496,20 @@ section.faq {
         padding: 0 10px;
         border: none;
         border-radius: 0;
-        -moz-appearance: none;
-             appearance: none;
         -webkit-appearance: none;
+           -moz-appearance: none;
+                appearance: none;
         -moz-text-align-last: center;
-             text-align-last: center;
-        padding-right: 0; }
+             text-align-last: center; }
       .hero .jumbotron .card .card-body .select-wrapper {
         position: relative; }
-      .hero .jumbotron .card .card-body .select-wrapper:after {
+      .hero .jumbotron .card .card-body .select-wrapper i {
         position: absolute;
-        top: 34px;
-        right: 25px;
-        font-family: FontAwesome;
-        content: '\f107';
+        top: 10px;
+        right: 10px;
         font-size: 28px;
         color: #434B67;
+        cursor: pointer;
         pointer-events: none; }
       .hero .jumbotron .card .card-body .btn-next {
         margin: 20px 0;
@@ -14516,7 +14521,7 @@ section.faq {
         text-align: center;
         border-radius: 0; }
         .hero .jumbotron .card .card-body .btn-next:hover {
-          background: #a9aaab; }
+          background: #333; }
   .hero .jumbotron .progress {
     height: .8rem;
     background-color: #d7d3d4; }
@@ -14530,6 +14535,29 @@ section.faq {
     .hero .admissions-contact-phone p {
       font-size: 0.875em; }
       .hero .admissions-contact-phone p span {
+        display: block; } }
+
+.hero-text {
+  color: #fff;
+  text-align: right; }
+  @media screen and (max-width: 992px) {
+    .hero-text {
+      text-align: center; } }
+  .hero-text .headline.small {
+    font-size: .585em; }
+    @media screen and (max-width: 992px) {
+      .hero-text .headline.small {
+        display: block; } }
+  .hero-text .headline.bold {
+    display: block;
+    font-size: 1.35em;
+    font-weight: 700; }
+    @media screen and (max-width: 992px) {
+      .hero-text .headline.bold {
+        display: inline; } }
+    @media screen and (max-width: 400px) {
+      .hero-text .headline.bold {
+        font-size: 1em;
         display: block; } }
 
 .featuring-icon {
