@@ -14463,6 +14463,12 @@ section.faq {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (max-width: 1300px) {
+    .hero .jumbotron {
+      min-height: 450px; } }
+  @media screen and (max-width: 992px) {
+    .hero .jumbotron {
+      padding: 2rem; } }
   @media screen and (max-width: 768px) {
     .hero .jumbotron {
       min-height: 573px;
@@ -14543,22 +14549,40 @@ section.faq {
   @media screen and (max-width: 992px) {
     .hero-text {
       text-align: center; } }
-  .hero-text .headline.small {
+  .hero-text .headline0 {
     font-size: .585em; }
     @media screen and (max-width: 992px) {
-      .hero-text .headline.small {
+      .hero-text .headline0 {
         display: block; } }
-  .hero-text .headline.bold {
+  .hero-text .headline1,
+  .hero-text .headline2,
+  .hero-text .headline3 {
     display: block;
     font-size: 1.35em;
     font-weight: 700; }
+    @media screen and (max-width: 1200px) {
+      .hero-text .headline1,
+      .hero-text .headline2,
+      .hero-text .headline3 {
+        font-size: 1.25em; } }
     @media screen and (max-width: 992px) {
-      .hero-text .headline.bold {
+      .hero-text .headline1,
+      .hero-text .headline2,
+      .hero-text .headline3 {
         display: inline; } }
     @media screen and (max-width: 576px) {
-      .hero-text .headline.bold {
+      .hero-text .headline1,
+      .hero-text .headline2,
+      .hero-text .headline3 {
         font-size: 1em;
         display: block; } }
+  @media screen and (max-width: 769px) {
+    .hero-text .headline2 {
+      display: block; } }
+  @media screen and (max-width: 992px) {
+    .hero-text .headline3 {
+      display: block;
+      margin-bottom: 30px; } }
 
 .featuring-icon {
   text-align: center; }

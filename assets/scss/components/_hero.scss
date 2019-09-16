@@ -6,6 +6,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    @media screen and (max-width: 1300px) {
+      min-height: 450px;
+    }
+    @media screen and (max-width: 992px) {
+      padding: 2rem;
+    }
     @media screen and (max-width: 768px) {
       min-height: 573px;
       background-image: url("/assets/img/img_hero_m.jpg");
@@ -92,29 +98,44 @@
     }
   }
 }
-
 .hero-text {
   color: $secondary-text;
   text-align: right;
   @media screen and (max-width: 992px) {
     text-align: center;
   }
-  .headline.small {
+  .headline0 {
     font-size: .585em;
     @media screen and (max-width: 992px) {
       display: block;
     }
   }
-  .headline.bold {
+  .headline1,
+  .headline2,
+  .headline3 {
     display: block;
     font-size: 1.35em;
     font-weight: 700;
+    @media screen and (max-width: 1200px) {
+      font-size: 1.25em;
+    }
     @media screen and (max-width: 992px) {
       display: inline;
     }
     @media screen and (max-width: 576px) {
       font-size: 1em;
       display: block;
+    }
+  }
+  .headline2 {
+    @media screen and (max-width: 769px) {
+      display: block;
+    }
+  }
+  .headline3 {
+    @media screen and (max-width: 992px) {
+      display: block;
+      margin-bottom: 30px;
     }
   }
 }
