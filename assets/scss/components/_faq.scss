@@ -22,19 +22,15 @@
     background-color: transparent;
     border-bottom: none;
     h5 {
-      .btn::before {
-        font-family: FontAwesome;
-        content:"\f068";
-        font-size: 1em;
-        font-weight: bold;
-        color: $primary;
-      }
-      .btn.collapsed::before {
-        content:"\f067";
-        color: $primary-text;
+      .btn.collapsed {
+        padding-left: 25px;
+        background: url("/assets/img/plus-symbol.svg") no-repeat  0 10px;
+        background-size: 15px;
       }
       .btn {
-        padding: 0.375rem 0;
+        background: url("/assets/img/minus-symbol.svg") no-repeat  0 16px;
+        background-size: 15px;
+        padding: 0.375rem 0 0.375em 25px;
         font-size: 0.8125em;
         text-align: left;
       }

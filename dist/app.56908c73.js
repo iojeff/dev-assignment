@@ -18353,7 +18353,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/img_hero.jpg":[["img_hero.15bddf08.jpg","assets/img/img_hero.jpg"],"assets/img/img_hero.jpg"],"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/img_hero_m.jpg":[["img_hero_m.16198533.jpg","assets/img/img_hero_m.jpg"],"assets/img/img_hero_m.jpg"],"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/js/app.js":[function(require,module,exports) {
+},{"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/img_hero.jpg":[["img_hero.15bddf08.jpg","assets/img/img_hero.jpg"],"assets/img/img_hero.jpg"],"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/img_hero_m.jpg":[["img_hero_m.16198533.jpg","assets/img/img_hero_m.jpg"],"assets/img/img_hero_m.jpg"],"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/plus-symbol.svg":[["plus-symbol.53a9d9a6.svg","assets/img/plus-symbol.svg"],"assets/img/plus-symbol.svg"],"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/minus-symbol.svg":[["minus-symbol.0a76bb78.svg","assets/img/minus-symbol.svg"],"assets/img/minus-symbol.svg"],"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/js/app.js":[function(require,module,exports) {
 "use strict";
 
 require("bootstrap");
@@ -18393,7 +18393,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55105" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54080" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
