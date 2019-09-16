@@ -10,4 +10,5 @@ View demo on Netlify - https://brave-liskov-17e889.netlify.com/
 - Bootstrap 4
 - Font Awesome
 - Git
+- Netlify
 
