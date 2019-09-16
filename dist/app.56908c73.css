@@ -14555,7 +14555,7 @@ section.faq {
     @media screen and (max-width: 992px) {
       .hero-text .headline.bold {
         display: inline; } }
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 576px) {
       .hero-text .headline.bold {
         font-size: 1em;
         display: block; } }
