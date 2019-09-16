@@ -14637,13 +14637,13 @@ section.faq {
   background-color: transparent;
   border-bottom: none; }
   .faq .card-header h5 .btn::before {
-    font-family: 'Glyphicons Halflings';
-    content: "\2212";
-    font-size: 1.35em;
+    font-family: FontAwesome;
+    content: "\f068";
+    font-size: 1em;
     font-weight: bold;
     color: #38bcdb; }
   .faq .card-header h5 .btn.collapsed::before {
-    content: "\2b";
+    content: "\f067";
     color: #000; }
   .faq .card-header h5 .btn {
     padding: 0.375rem 0;

@@ -23,14 +23,14 @@
     border-bottom: none;
     h5 {
       .btn::before {
-        font-family: 'Glyphicons Halflings';
-        content: "\2212";
-        font-size: 1.35em;
+        font-family: FontAwesome;
+        content:"\f068";
+        font-size: 1em;
         font-weight: bold;
         color: $primary;
       }
       .btn.collapsed::before {
-        content:"\2b";
+        content:"\f067";
         color: $primary-text;
       }
       .btn {
