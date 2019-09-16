@@ -14479,7 +14479,8 @@ section.faq {
       min-height: 0;
       background-image: none; }
       .hero .jumbotron .xs-hero-background {
-        background-image: url("/img_hero_m.16198533.jpg"); } }
+        background-image: url("/img_hero_m.16198533.jpg");
+        background-size: cover; } }
   .hero .jumbotron .card {
     border: none;
     border-radius: 0; }
@@ -14574,7 +14575,7 @@ section.faq {
       .hero-text .headline1,
       .hero-text .headline2,
       .hero-text .headline3 {
-        font-size: 1em;
+        font-size: .875em;
         display: block; } }
   @media screen and (max-width: 769px) {
     .hero-text .headline2 {
@@ -14673,6 +14674,9 @@ section.faq {
   .our-story p {
     font-size: 1.4375em;
     text-align: center; }
+    @media screen and (max-width: 768px) {
+      .our-story p {
+        font-size: 1.25em; } }
 
 footer {
   padding: 60px 0;

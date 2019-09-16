@@ -22,6 +22,7 @@
       background-image: none;
       .xs-hero-background {
         background-image: url("/assets/img/img_hero_m.jpg");
+        background-size: cover;
       }
     }
     .card {
@@ -123,7 +124,7 @@
       display: inline;
     }
     @media screen and (max-width: 576px) {
-      font-size: 1em;
+      font-size: .875em;
       display: block;
     }
   }
