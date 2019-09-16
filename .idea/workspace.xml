@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc88db5a-e887-4e37-b251-09295fc6c280" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/assets/scss/components/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/scss/components/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.56908c73.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.56908c73.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/app.56908c73.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.56908c73.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.56908c73.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.56908c73.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.56908c73.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.56908c73.js.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -24,7 +22,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46975353">
+    <splitter split-orientation="horizontal" split-proportion="0.2987304">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
@@ -52,11 +50,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="191">
-                  <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-                  <folding>
-                    <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-                  </folding>
+                <state relative-caret-position="385">
+                  <caret line="152" column="33" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
@@ -257,12 +252,12 @@
       <workItem from="1568380208417" duration="7990000" />
       <workItem from="1568396040907" duration="50060000" />
       <workItem from="1568592883307" duration="6900000" />
-      <workItem from="1568600938132" duration="5019000" />
+      <workItem from="1568600938132" duration="5607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69969000" />
+    <option name="totallyTimeSpent" value="70557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="962" extended-state="6" />
@@ -470,11 +465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="385">
+          <caret line="152" column="33" selection-start-line="152" selection-start-column="33" selection-end-line="152" selection-end-column="33" />
         </state>
       </provider>
     </entry>
