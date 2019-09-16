@@ -1,0 +1,1 @@
+{"version":3,"sources":["assets/scss/base/_typography.scss"],"names":[],"mappings":"AAAA,6EAAY,CAEZ,KACE,cAAe,CACf,gCAAoC","file":"app.efbac239.css","sourceRoot":"..","sourcesContent":["@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');\n\nbody {\n  font-size: 16px;\n  font-family: 'Open Sans', sans-serif;\n}\n"]}
