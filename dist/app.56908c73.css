@@ -14489,9 +14489,9 @@ section.faq {
         padding: 0 10px;
         border: none;
         border-radius: 0;
+        -moz-appearance: none;
+             appearance: none;
         -webkit-appearance: none;
-           -moz-appearance: none;
-                appearance: none;
         -moz-text-align-last: center;
              text-align-last: center;
         padding-right: 0; }
