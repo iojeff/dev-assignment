@@ -14595,6 +14595,9 @@ section.faq {
 
 .featuring-text {
   padding-bottom: 25px; }
+  @media screen and (max-width: 992px) {
+    .featuring-text {
+      padding-bottom: 20px; } }
   @media screen and (max-width: 576px) {
     .featuring-text {
       padding-bottom: 15px; } }
