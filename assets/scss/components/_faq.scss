@@ -1,0 +1,59 @@
+.faq {
+  h2 {
+    position: relative;
+    margin-bottom: 45px;
+  }
+  h2:after {
+    content:' ';
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    width: 95px;
+    height: 5px;
+    background: $primary;
+  }
+  .card {
+    border: none;
+    border-radius: 0;
+  }
+  .card-header {
+    padding: 0;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-bottom: none;
+    h5 {
+      .btn::before {
+        font-family: 'Glyphicons Halflings';
+        content: "\2212";
+        font-size: 1.35em;
+        font-weight: bold;
+        color: $primary;
+      }
+      .btn.collapsed::before {
+        content:"\2b";
+        color: $primary-text;
+      }
+      .btn {
+        padding: 0.375rem 0;
+        font-size: 0.8125em;
+        text-align: left;
+      }
+      .btn:focus, .btn.focus {
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+  .card-header:first-child {
+    border-radius: 0;
+  }
+  .card-body {
+    padding: 0;
+    ul {
+      margin-bottom: 0;
+    }
+    li {
+      padding-bottom: 10px;
+    }
+  }
+}

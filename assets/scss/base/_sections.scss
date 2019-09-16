@@ -1,0 +1,10 @@
+section.featuring,
+section.faq {
+  padding: 90px 0;
+}
+@media screen and (max-width: 576px) {
+  section.featuring,
+  section.faq {
+    padding: 45px 0;
+  }
+}

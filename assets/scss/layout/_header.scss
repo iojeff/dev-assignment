@@ -1,0 +1,20 @@
+header {
+  background-color: $default;
+  .logo {
+    width: 195px;
+    padding: 20px 0;
+  }
+  @media screen and (max-width: 576px) {
+    .trilogy-header-logo {
+      text-align: center;
+    }
+    .logo {
+      width: 200px;
+    }
+  }
+}
+
+
+
+
+

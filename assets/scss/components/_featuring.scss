@@ -1,0 +1,31 @@
+.featuring-icon {
+  text-align: center;
+  @media screen and (max-width: 992px) {
+    text-align: right;
+  }
+  img {
+    width: 60px;
+    padding-bottom: 15px;
+  }
+}
+.featuring-text {
+  padding-bottom: 25px;
+  @media screen and (max-width: 576px) {
+    padding-bottom: 15px;
+  }
+  p {
+    text-align: center;
+  }
+  @media screen and (max-width: 992px) {
+    p {
+      text-align: left;
+    }
+  }
+}
+.featuring-phone {
+  width: 310px;
+}
+.featuring-disclaimer {
+  font-size: .875em;
+  text-align: center;
+}
