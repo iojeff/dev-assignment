@@ -117,7 +117,49 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../../../../.config/yarn/global/node_modules/process/browser.js":[function(require,module,exports) {
+})({"assets/js/vendors/select.js":[function(require,module,exports) {
+var activeDropdown = {};
+document.getElementById('programs-dropdown-text').addEventListener('click', showDropdown);
+
+function showDropdown(event) {
+  if (activeDropdown.id && activeDropdown.id !== event.target.id) {
+    activeDropdown.element.classList.remove('active');
+  } //checking if a list element was clicked, changing the inner button value
+
+
+  if (event.target.tagName === 'LI') {
+    activeDropdown.button.innerHTML = event.target.innerHTML;
+
+    for (var i = 0; i < event.target.parentNode.children.length; i++) {
+      if (event.target.parentNode.children[i].classList.contains('check')) {
+        event.target.parentNode.children[i].classList.remove('check');
+      }
+    } //timeout here so the check is only visible after opening the dropdown again
+
+
+    window.setTimeout(function () {
+      event.target.classList.add('check');
+    }, 500);
+  }
+
+  for (var i = 0; i < this.children.length; i++) {
+    if (this.children[i].classList.contains('dropdown-selection')) {
+      activeDropdown.id = this.id;
+      activeDropdown.element = this.children[i];
+      this.children[i].classList.add('active');
+    } //adding the dropdown-button to our object
+    else if (this.children[i].classList.contains('dropdown-button')) {
+        activeDropdown.button = this.children[i];
+      }
+  }
+}
+
+window.onclick = function (event) {
+  if (!event.target.classList.contains('dropdown-button')) {
+    activeDropdown.element.classList.remove('active');
+  }
+};
+},{}],"../../../../.config/yarn/global/node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -18052,6 +18094,8 @@ module.hot.accept(reloadCSS);
 },{"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/down-arrow.png":[["down-arrow.0576f461.png","assets/img/down-arrow.png"],"assets/img/down-arrow.png"],"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/img_hero.jpg":[["img_hero.15bddf08.jpg","assets/img/img_hero.jpg"],"assets/img/img_hero.jpg"],"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/img_hero_m.jpg":[["img_hero_m.16198533.jpg","assets/img/img_hero_m.jpg"],"assets/img/img_hero_m.jpg"],"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/plus-symbol.svg":[["plus-symbol.53a9d9a6.svg","assets/img/plus-symbol.svg"],"assets/img/plus-symbol.svg"],"/Users/jwolff/Documents/dev/dev-learning/dev-assignment/assets/img/minus-symbol.svg":[["minus-symbol.0a76bb78.svg","assets/img/minus-symbol.svg"],"assets/img/minus-symbol.svg"],"_css_loader":"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"assets/js/app.js":[function(require,module,exports) {
 "use strict";
 
+require("../js/vendors/select.js");
+
 require("bootstrap");
 
 require("bootstrap/dist/css/bootstrap.css");
@@ -18059,7 +18103,7 @@ require("bootstrap/dist/css/bootstrap.css");
 require("@fortawesome/fontawesome-free/css/all.css");
 
 require("../scss/app.scss");
-},{"bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","@fortawesome/fontawesome-free/css/all.css":"node_modules/@fortawesome/fontawesome-free/css/all.css","../scss/app.scss":"assets/scss/app.scss"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"../js/vendors/select.js":"assets/js/vendors/select.js","bootstrap":"node_modules/bootstrap/dist/js/bootstrap.js","bootstrap/dist/css/bootstrap.css":"node_modules/bootstrap/dist/css/bootstrap.css","@fortawesome/fontawesome-free/css/all.css":"node_modules/@fortawesome/fontawesome-free/css/all.css","../scss/app.scss":"assets/scss/app.scss"}],"../../../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -18087,7 +18131,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64439" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63596" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

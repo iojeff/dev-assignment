@@ -12,6 +12,14 @@
     height: 5px;
     background: $primary;
   }
+  img {
+    @media screen and (max-width: 992px) {
+      margin-bottom: 50px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-bottom: 25px;
+    }
+  }
   .card {
     border: none;
     border-radius: 0;
