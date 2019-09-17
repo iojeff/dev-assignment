@@ -1,4 +1,3 @@
-
 var activeDropdown = {};
 document.getElementById('programs-dropdown-text').addEventListener('click',showDropdown);
 

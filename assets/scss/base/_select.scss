@@ -1,54 +1,54 @@
 .dropdown {
   position: relative;
-  width: 90%;
+  width: 98%;
   margin: 0 auto;
   z-index: 100;
 }
 .dropdown-button {
-  position:relative;
+  position: relative;
   width: 100%;
-  background: url("/assets/img/down-arrow.png") no-repeat 98% 16px #fff;
+  background: url("/assets/img/down-arrow.png") no-repeat 95% 12px #fff;
   background-size: 22px;
-  color:#333;
+  color: #333;
   text-align: center;
-  letter-spacing:0.025rem;
-  box-sizing:border-box;
-  padding:10px 30px;
-  border-radius:0;
-  cursor:pointer;
+  letter-spacing: 0.025rem;
+  box-sizing: border-box;
+  padding: 5px 30px;
+  border-radius: 0;
+  cursor: pointer;
   transition:background .3s ease;
 }
 .dropdown ul {
   width: 100%;
   visibility: hidden;
-  overflow:hidden;
-  color:#fff;
-  transform-origin:top;
-  padding:0;
-  list-style:none;
-  transform:scaleY(0);
-  position:absolute;
-  left:0;
-  margin-top:2px;
-  top:100%;
-  min-width:90%;
-  transition:all .3s ease;
+  overflow: hidden;
+  color: #fff;
+  transform-origin: top;
+  padding: 0;
+  list-style: none;
+  transform: scaleY(0);
+  position: absolute;
+  left: 0;
+  margin-top: 2px;
+  top: 100%;
+  min-width: 90%;
+  transition: all .3s ease;
 }
 .dropdown ul.active {
   visibility: visible;
-  transition:all .3s ease;
-  transform:scaleY(1);
-  color:#333;
+  transition: all .3s ease;
+  transform: scaleY(1);
+  color: #333;
 }
 .dropdown li {
-  background:#fff;
-  padding:8px 10px 8px 15px;
-  box-sizing:border-box;
-  cursor:pointer;
-  transition:background .2s ease;
-  position:relative;
+  background: #fff;
+  padding: 8px 10px 8px 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background .2s ease;
+  position: relative;
 }
 .dropdown li:hover {
-  background:#f6f6f6;
-  transition:background .2s ease;
+  background: #f6f6f6;
+  transition: background .2s ease;
 }
